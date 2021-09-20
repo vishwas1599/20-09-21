@@ -1,0 +1,83 @@
+package com.thbs;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        //LEAP YEAR
+        Scanner s = new Scanner(System.in);
+       /* System.out.println("Enter yr ");
+        int yr=s.nextInt();
+        if(yr%4==0)
+        {
+            if(yr%100==0)
+            {
+                if(yr%400==0)
+                    System.out.println("is a Leap year");
+                    else
+                    System.out.println("not a leap year");
+                }
+                else
+                System.out.println("is a Leap year");
+
+            }
+            else
+            System.out.println("is not a Leap yr");
+        int n, r, m, sum = 0;
+        System.out.println("Enter n");
+        n = s.nextInt();
+        m = n;
+
+        while (n > 0) {
+            r = n % 10;
+            n = n / 10;
+            sum += r * r * r;
+        }
+        if (sum == m)
+            System.out.println("is Armstrong");
+        else
+            System.out.println("Not Armstrong");
+        int n,i,sum=0;
+        System.out.println("Enter n");
+        n=s.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                sum+=i;
+
+            }
+        }
+        if(2*n==sum)
+            System.out.println("Perfect num");
+            else
+            System.out.println("not perfect");
+        int i,n;
+        System.out.println("Enter n");
+        n=s.nextInt();
+        for(i=1;i<=10;i++)
+        {
+            System.out.println(n+" "+"x"+i+"="+n*i);
+        }*/
+        int n,m,h,l;
+        System.out.println("Enter 2 nos");
+        n=s.nextInt();
+        m=s.nextInt();
+        l=m*n;
+        while(m!=n)
+        {
+            if(m>n)
+            m=m-n;
+            else if (n>m)
+                n=n-m;
+        }
+        h=m;
+
+        System.out.println("HCF"+h);
+        System.out.println("LCM"+(l/h));
+
+
+
+    }
+}
